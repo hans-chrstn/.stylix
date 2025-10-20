@@ -11,7 +11,7 @@
   fontNames = builtins.attrNames fonts;
   cfg = config.theme;
 in {
-  imports = [inputs.stylix.homeManagerModules.stylix];
+  imports = [inputs.stylix.homeModules.stylix];
   options.theme = {
     enable = lib.mkEnableOption "Enable the modular Stylix theme";
     scheme = lib.mkOption {

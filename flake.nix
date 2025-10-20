@@ -24,10 +24,7 @@
     ];
     forAllSystems = f: lib.genAttrs systems f;
   in {
-    homeManagerModules.default = import ./modules {
-      inherit inputs;
-      lib = nixpkgs.lib;
-    };
+    homeModules.default = import ./modules;
     overlays.default = final: prev:
       (import ./packages) {
         pkgs = final;
