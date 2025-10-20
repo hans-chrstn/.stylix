@@ -13,7 +13,7 @@
     self,
     nixpkgs,
     stylix,
-  }: let
+  } @ inputs: let
     lib = nixpkgs.lib;
     systems = [
       "aarch64-linux"
