@@ -11,7 +11,8 @@
 
   outputs = {
     self,
-    nixpkgs
+    nixpkgs,
+    stylix,
   } @ inputs: let
     lib = nixpkgs.lib;
     systems = [
