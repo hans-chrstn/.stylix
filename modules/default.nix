@@ -17,12 +17,12 @@ in {
     scheme = lib.mkOption {
       type = lib.types.enum themeNames;
       default = "desert-taupe";
-      description = "The color scheme to apply.";
+      description = "The color scheme to apply. Available schemes: " + lib.concatStringsSep " | " themeNames;
     };
     font = lib.mkOption {
       type = lib.types.enum fontNames;
       default = "apple";
-      description = "The font family to apply.";
+      description = "The font family to apply. Available fonts: " + lib.concatStringsSep " | " fontNames;
     };
   };
 
