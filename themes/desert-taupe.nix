@@ -10,9 +10,9 @@
   base08 = "C7665E";
   base09 = "D48D57";
   base0A = "C9A86E";
-  base0B = "82A677";
-  base0C = "60A3A6";
-  base0D = "758D9F";
-  base0E = "9C77A8";
+  base0B = "9E8C78";
+  base0C = "B9AA96";
+  base0D = "5F524A";
+  base0E = "9E8C78";
   base0F = "B88A6F";
 }
