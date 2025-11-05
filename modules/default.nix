@@ -32,14 +32,6 @@ in {
       autoEnable = true;
       base16Scheme = themes.${cfg.scheme};
       fonts = fonts.${cfg.font};
-      targets = {
-        neovim.enable = true;
-        zen = {
-          enable = true;
-          profileNames = ["default"];
-        };
-      };
-
       cursor = {
         package = pkgs.bibata-cursors;
         name = "Bibata-Modern-Ice";
