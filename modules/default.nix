@@ -29,8 +29,16 @@ in {
   config = lib.mkIf cfg.enable {
     stylix = {
       enable = true;
+      autoEnable = true;
       base16Scheme = themes.${cfg.scheme};
       fonts = fonts.${cfg.font};
+      targets = {
+        neovim.enable = true;
+        zen = {
+          enable = true;
+          profileNames = ["default"];
+        };
+      };
 
       cursor = {
         package = pkgs.bibata-cursors;
